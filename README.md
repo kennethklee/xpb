@@ -1,6 +1,6 @@
 # xpocketbase
 
-Plugin orientated custom pocketbase builder, inspired by [xcaddy](https://github.com/caddyserver/xcaddy/).
+Plugin orientated custom [pocketbase](https://pocketbase.io) builder, inspired by [xcaddy](https://github.com/caddyserver/xcaddy/).
 
 This is a working example of building pocketbase with plugin support on the server.
 
