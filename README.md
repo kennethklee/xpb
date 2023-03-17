@@ -8,8 +8,10 @@ Plugin orientated custom pocketbase builder, inspired by [xcaddy](https://github
 
 ## Install
 
+Install from source:
+
 ```
-go get https://github.com/kennethklee/xpb/xpocketbase
+go install github.com/kennethklee/xpb/xpocketbase@latest
 ```
 
 ## Usage
