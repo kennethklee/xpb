@@ -1,6 +1,8 @@
 # xpocketbase
 
-Plugin orientated custom pocketbase builder, inspired by [xcaddy](https://github.com/caddyserver/xcaddy/)
+Plugin orientated custom pocketbase builder, inspired by [xcaddy](https://github.com/caddyserver/xcaddy/).
+
+This is a usable example of running pocketbase
 
 ## Requirements
 
@@ -23,16 +25,15 @@ go install github.com/kennethklee/xpb/xpocketbase@latest
 xpocketbase build master
 xpocketbase build v0.8.0
 
-# Build with current plugin module
-xpocketbase build latest \
-    --with my-module=.
-
-# Build with plugins
+# Build the examples/base pocketbase
 xpocketbase build latest \
     --with github.com/kennethklee/xpb/plugins/static \
-    --with github.com/kennethklee/xpb/plugins/automigrate \
-    --with github.com/kennethklee/xpb/plugins/timeout \
-    --with github.com/kennethklee/pb-cms/plugin
+    --with github.com/kennethklee/xpb/plugins/migrations \
+    --with github.com/kennethklee/xpb/plugins/timeout
+
+# Build with plugin module in current directory
+xpocketbase build latest \
+    --with my-module=.
 
 # Specific version
 xpocketbase build latest \

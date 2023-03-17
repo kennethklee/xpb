@@ -25,7 +25,7 @@ func (p *Plugin) Info() xpb.PluginInfo {
 	return xpb.PluginInfo{
 		Name:        "static",
 		Version:     "latest",
-		Description: "Statically serves public directory ",
+		Description: "Statically serves public directory",
 	}
 }
 
