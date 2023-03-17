@@ -2,7 +2,7 @@
 
 Plugin orientated custom pocketbase builder, inspired by [xcaddy](https://github.com/caddyserver/xcaddy/).
 
-This is a usable example of running pocketbase
+This is a working example of building pocketbase with plugin support on the server.
 
 ## Requirements
 
@@ -28,8 +28,8 @@ xpocketbase build v0.8.0
 # Build the examples/base pocketbase
 xpocketbase build latest \
     --with github.com/kennethklee/xpb/plugins/static \
-    --with github.com/kennethklee/xpb/plugins/migrations \
-    --with github.com/kennethklee/xpb/plugins/timeout
+    --with github.com/kennethklee/xpb/plugins/migrations-js \
+    --with github.com/kennethklee/xpb/plugins/timeouts
 
 # Build with plugin module in current directory
 xpocketbase build latest \
@@ -41,7 +41,7 @@ xpocketbase build latest \
 
 # Replaces contents of module with contents elsewhere
 xpocketbase build latest \
-    --with github.com/kennethklee/xpb/plugins/static@v1.0.0=../plugin-fork
+    --with github.com/kennethklee/xpb/plugins/static@v1.0.0=../plugins/static
 
 # go build flags
 xpocketbase build latest \
